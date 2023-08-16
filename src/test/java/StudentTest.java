@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class StudentTest {
-
+private Student emptyStudent;
     private Student student;
 
     @Before
@@ -17,6 +17,7 @@ public class StudentTest {
     @Test
     public void testForStudent() {
         Student student1 = new Student();
+        assertNull(emptyStudent);
         assertNotNull(student1);
     }
 
